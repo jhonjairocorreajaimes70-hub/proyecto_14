@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Edad</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Vamos a calcular tu edad</h1>
+    
+    <form id="age-form">
+      <div class="form-group">
+        <label for="birthdate">Fecha de nacimiento:</label>
+        <input 
+          type="text" 
+          id="birthdate" 
+          placeholder="00/00/0000" 
+          autocomplete="off"
+          required
+        >
+      </div>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result" class="result hidden"></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
